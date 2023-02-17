@@ -1,0 +1,539 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title>Study Java </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <section class="introductionheader">
+       <nav>
+           
+           
+            <a href="./index.html"><img src="./images/home.png"></a>
+           
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                     <li><a href="./index.html">HOME</a></li>
+                  
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+           <img src="./images/moon.png" id="icon">
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       
+        <nav6>
+<ul>
+
+
+
+        <li><a href="./OOPS.html" class="hero-btn16">classes,objects</a></li>
+        
+
+ 
+        <li><a href="./constructor.html" class="hero-btn17">Constructor</a></li>
+        
+
+ 
+        <li><a href="./privatepublic.html" class="hero-btn18">Acess modifiers</a></li>
+        
+
+
+
+</ul>
+</nav6> 
+        
+        
+<div class="clodtext-box"> 
+        <h1>Classes and Objects</h1>
+        
+        
+</div>
+        
+</section>
+        
+        
+                                  <img src="./images/logo.png" alt="description of image">
+        
+               
+        
+<!-------home and contact------>
+
+
+<html>
+
+<body>
+
+<div class="container">
+
+<nav8>
+<ul>
+    
+<li><a href="./index.html">Home</a></li>
+                  
+<li><a href="./contact.html">Contact</a></li>
+
+</ul>
+</nav8>
+</div>
+
+</body>
+</html>
+ 
+        
+<!------scroll bar------>        
+<section>
+    
+<div class = "arrow">
+<a class="gotobtn" href="#"><i class="fa fa-arrow-up"></i></a>
+        </div>
+</section>
+              
+        
+<!------page content------>
+
+<section class="page-content">
+    
+    <div class="coed">
+    
+        <br>
+        <br>
+    <h1>Java Classes </h1>
+        <br>
+<p>Before we can create objects, we need to define a class. It acts as a blueprint for the object. <br> 
+ <br>
+
+Think of a class as a blueprint of a house. It contains all the details about the floors, doors, windows etc. Based on these <br> descriptions we build the house. The actual physical house is the object. <br> 
+ <br>
+
+In Java, we use the class keyword to Define a class. <br>  
+ <br>
+
+For example, <br> 
+ <br>
+
+Class ClassName {  <br>
+ <br>
+
+} <br> 
+ <br>
+
+If you have noticed, we have used the same structure in all of our previous examples. <br> 
+ <br>
+
+A class can contain: <br> 
+ <br>
+
+Fields – to store data <br> 
+ <br>
+
+Methods – to perform tasks on fields <br> 
+
+    
+
+</p>    
+        </div>
+        </section>
+
+ 
+<!------page content------>
+
+<section class="page-content1">
+    
+    <div class="coed1">
+    
+        <br>
+        <br>
+    <h1>Java Objects </h1>
+        <br>
+<p>To access the fields and methods of a class, we need to create objects of the class. Create Objects<br> 
+<br>
+An object is called an instance of a class. Here’s how we can create an object.<br> 
+<br>
+ClassName object = new ClassName();<br> 
+<br>
+Let’s create an object from the Bicycle class we created in the last page.<br> 
+<br>
+Bicycle bike1 = new Bicycle();<br>
+<br>    
+Now, the bike1 objects can access fields and methods of the class. We will see a working example of It next.<br> 
+<br>
+Access Fields and Methods using Object<br> 
+<br>
+We use the name of objects along with the . operator to access fields and methods of a class <br> 
+
+    
+
+</p>    
+        </div>
+        </section>        
+        
+<!------method program header------>
+        
+         <section class="oblcp">
+    
+        <br>
+        <br>
+    <h1>Access Fields and Methods using Object </h1>
+        <br>
+     <p>● We use the name of objects along with the . operator to access fields and methods of a class.   <br>
+      <br>
+         <br>
+         
+          ● Here, we have created class named called Bicycle that has field and method  <br>
+         </p>   
+             
+             
+             
+   <div class="text-boxes18">
+    <div class="text-box18 HTMLBox18">
+      <div class="topic18"></div>
+      <textarea id="HTMLBox18" readonly>
+
+class Bicycle { 
+
+// field 
+          
+int gear = 5; 
+
+// method 
+
+void applyBrake(){ 
+
+System.out.println( "Applying brake."); 
+
+} 
+
+// the main method 
+
+public static void main(String[] args) { 
+
+// create object of Bicycle
+ Bicycle bike1= new Bicycle(); 
+
+// access fields and methods 
+
+System.out.printin("No. of gears: " + bike1.gear); 
+
+bike1.applyBrake(); 
+
+} } 
+/*Output 
+
+No. of gears: 5 
+Applying brake. */
+
+
+
+                     
+      </textarea>
+      <button id="HTMLButton18">Copy Code</button>
+    </div>
+   </div>
+     </section>              
+
+ <!------link box(decision making)------>
+           
+       <section class="cloblink">
+    
+    <div class="clobdlink">
+        
+    </div>
+    
+    </section>   
+        
+<!------link box(loops)------>
+           
+       <section class="conslink">
+    
+    <div class="consdlink">
+        
+    </div>
+    
+    </section> 
+
+<!------link box(While and Do-while loop)------>
+           
+       <section class="prpublink">
+    
+    <div class="prpudlink">
+        
+    </div>
+    
+    </section>
+        
+
+        
+     
+        
+
+
+        
+<!------JavaScript for Toggle Menu------>
+    
+<script>
+     
+     var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+     
+     function hideMenu(){
+         navLinks.style.right = "-200px";
+     }
+    
+</script>
+        
+
+     
+<!------JavaScript for program copy code              methods------>
+        
+<script>
+  // HTML BOx JS Code
+    let HTMLBox18 = document.getElementById("HTMLBox18");
+    let HTMLButton18 = document.getElementById("HTMLButton18");
+
+    HTMLButton18.onclick = function() {
+      HTMLBox18.select();
+      document.execCommand("copy");
+      HTMLButton18.innerText = "Codes Copied"
+    }
+
+        </script>     
+ <!------JavaScript for code color that stays------>
+        
+        <script>
+        
+        const activePage = window.location.pathname;    
+        const nav6Links = document.querySelectorAll('nav6 a').
+        forEach(link => {
+            if(link.href.includes(`${activePage}`)){
+            link.classList.add('active');
+            }
+        })
+       </script> 
+     
+
+     
+    </body>
+</html>
+     
+     
+     
+     
+     
+     
+<section class="quiz-content15">
+    
+    <div class="quiz15">
+    
+        <br>
+        <br>
+    <h1>Quiz</h1>
+        <br>
+ 
+        </div>
+     </section>
+
+
+ <html>
+
+<body>
+
+  <div class="quiz-container15" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question">Question Text</h2>
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">Answer</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <button id="submit">Submit</button>
+
+  </div>
+
+
+
+  
+</body>
+</html>
+
+
+
+
+
+<script>
+
+const quizData = [
+    {
+        question: "What is an instance of a class in Java called?",
+        a: "class",
+        b: "keyword",
+        c: "method",
+        d: "Object",
+        correct: "d",
+    },
+    {
+        question: "What keyword in Java is used to declare a class?",
+        a: "object",
+        b: "class",
+        c: "instance",
+        d: "none of above",
+        correct: "b",
+    },
+  
+    {
+        question: "What is the syntax for creating an object in Java?",
+        a: "type obj = new type();",
+        b: "class_name object_name = new class_name();",
+        c: "class obj = new class();",
+        d: "none of above",
+        correct: "b",
+    },
+
+
+];
+
+const quiz= document.getElementById('quiz')
+const answerEls = document.querySelectorAll('.answer')
+const questionEl = document.getElementById('question')
+const a_text = document.getElementById('a_text')
+const b_text = document.getElementById('b_text')
+const c_text = document.getElementById('c_text')
+const d_text = document.getElementById('d_text')
+const submitBtn = document.getElementById('submit')
+
+
+let currentQuiz = 0
+let score = 0
+
+loadQuiz()
+
+function loadQuiz() {
+
+    deselectAnswers()
+
+    const currentQuizData = quizData[currentQuiz]
+
+    questionEl.innerText = currentQuizData.question
+    a_text.innerText = currentQuizData.a
+    b_text.innerText = currentQuizData.b
+    c_text.innerText = currentQuizData.c
+    d_text.innerText = currentQuizData.d
+}
+
+function deselectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+}
+
+function getSelected() {
+    let answer
+    answerEls.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+    return answer
+}
+
+
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if(answer) {
+       if(answer === quizData[currentQuiz].correct) {
+           score++
+       }
+
+       currentQuiz++
+
+       if(currentQuiz < quizData.length) {
+           loadQuiz()
+       } else {
+           quiz.innerHTML = `
+           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+
+           <button onclick="location.reload()">Try again</button>
+           `
+       }
+    }
+})
+
+</script>
+         
+
+<!------DARKMODE FOR ALL PAGES------> 
+<script>
+    if(localStorage.getItem("theme") == "light"){
+        document.body.classList.remove("dark-theme");
+    }
+    else if(localStorage.getItem("theme") == "dark"){
+        document.body.classList.add("dark-theme");
+    }
+</script>
+
+
+
+        
+        
+   <!------JavaScript for DARK MODE------>     
+        
+    <script>
+        
+        var icon = document.getElementById("icon");
+        
+        if(localStorage.getItem("theme") == null){
+         
+             localStorage.setItem("theme", "light"); 
+            
+        }
+        
+        
+        let localData = localStorage.getItem("theme");
+        
+        if(localData == "light"){
+            icon.src = "./images/moon.png";
+            document.body.classList.remove("dark-theme");
+        }
+        else if(localData == "dark"){
+            icon.src = "./images/sun.png";
+            document.body.classList.add("dark-theme");
+        }
+        
+        
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "./images/sun.png";
+                localStorage.setItem("theme", "dark");
+        }else{
+            
+            icon.src="./images/moon.png";
+            localStorage.setItem("theme", "light");
+        }
+        
+        }
+    </script>   

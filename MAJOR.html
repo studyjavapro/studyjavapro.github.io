@@ -1,0 +1,489 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title>Study Java </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <section class="introductionheader">
+       <nav>
+           
+           
+            <a href="./index.html"><img src="./images/home.png"></a>
+           
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                     <li><a href="./index.html">HOME</a></li>
+                  
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+           <img src="./images/moon.png" id="icon">
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <nav7>
+<ul>
+
+
+  
+        <li><a href="./MAJOR.html" class="hero-btn19">Inheritance</a></li>
+       
+
+
+ 
+        <li><a href="./overiding.html" class="hero-btn20">Overriding</a></li>
+      
+
+
+
+        <li><a href="./overloading.html" class="hero-btn21">Overloading</a></li>
+      
+
+
+
+</ul>
+</nav7> 
+        
+        
+<div class="inhdtext-box"> 
+        <h1>Java Inheritance </h1>
+        
+        
+</div>
+        
+</section>
+        
+        
+                                  <img src="./images/logo.png" alt="description of image"> 
+        
+               
+        
+<!-------home and contact------>
+
+
+<html>
+
+<body>
+
+<div class="container">
+
+<nav8>
+<ul>
+    
+<li><a href="./index.html">Home</a></li>
+                  
+<li><a href="./contact.html">Contact</a></li>
+
+</ul>
+</nav8>
+</div>
+
+</body>
+</html>
+ 
+        
+<!------scroll bar------>        
+<section>
+    
+<div class = "arrow">
+<a class="gotobtn" href="#"><i class="fa fa-arrow-up"></i></a>
+        </div>
+</section>
+       
+        
+<!------page content------>
+
+<section class="page-content">
+    
+    <div class="ined">
+    
+        <br>
+        <br>
+    <h1>Java Inheritance </h1>
+        <br>
+<p>Inheritance is one of the key features of object-oriented programming.<br> 
+<br>
+It allows us to derive new classes (subclasses) from an existing class <br>
+(superclass).<br> 
+<br>
+For example,<br> 
+<br>
+Class Animal {<br> 
+<br>
+// code of superclass<br> 
+<br>
+} 
+<br>
+Class Dog extends Animal { 
+<br>
+// code of subclass<br> 
+<br>
+}<br> 
+<br>
+Here, we derived the Dog class from the Animal class.<br>
+To derive a class, we use the extends keyword.<br> 
+The class inherits all the features from the nimal class.<br>
+In addition to that, we can add dog specific features to the class<br>
+
+
+    
+
+</p>    
+        </div>
+        </section>
+
+    <section>
+ <div class="text-boxes21">
+    <div class="text-box21 HTMLBox21">
+      <div class="topic21"></div>
+      <textarea id="HTMLBox21" readonly>
+
+class Animal { 
+
+String name; 
+
+public void eat() { 
+
+System.out.println(“I am an animal”); 
+System.out.printin(“I can eat”); 
+
+} } 
+
+class Dog extends Animal { 
+
+public void display() { 
+
+System.out.println("My name is " + name); 
+
+} } 
+
+class Main (public static void main(String[] args) { 
+
+// create an object of the subclass 
+
+Dog dog1= new Dog(); 
+
+// access inherited superclass members dog1.name = “Gruger”; 
+Dog1.display(); 
+} 
+} 
+
+/*Output: 
+I am an animal 
+I can eat 
+My name is Gruger*/
+
+
+                     
+      </textarea>
+      <button id="HTMLButton21">Copy Code</button>
+    </div>
+   </div>
+     </section>                    
+                
+        
+
+ <!------link box(decision making)------>
+           
+       <section class="inhlink">
+    
+    <div class="inhdlink">
+      
+    </div>
+    
+    </section>   
+        
+<!------link box(loops)------>
+           
+       <section class="rilink">
+    
+    <div class="ridlink">
+       
+    </div>
+    
+    </section> 
+
+<!------link box(While and Do-while loop)------>
+           
+       <section class="rlolink">
+    
+    <div class="rlodlink">
+        
+    </div>
+    
+    </section>
+        
+
+        
+     
+        
+
+
+        
+<!------JavaScript for Toggle Menu------>
+    
+<script>
+     
+     var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+     
+     function hideMenu(){
+         navLinks.style.right = "-200px";
+     }
+    
+</script>
+        
+
+     
+<!------JavaScript for program copy code              ad op in------>
+        
+<script>
+  // HTML BOx JS Code
+    let HTMLBox21 = document.getElementById("HTMLBox21");
+    let HTMLButton21 = document.getElementById("HTMLButton21");
+
+    HTMLButton21.onclick = function() {
+      HTMLBox21.select();
+      document.execCommand("copy");
+      HTMLButton21.innerText = "Codes Copied"
+    }
+
+        </script>     
+ 
+ <!------JavaScript for code color that stays------>
+        
+        <script>
+        
+        const activePage = window.location.pathname;    
+        const nav7Links = document.querySelectorAll('nav7 a').
+        forEach(link => {
+            if(link.href.includes(`${activePage}`)){
+            link.classList.add('active');
+            }
+        })
+       </script>     
+
+     
+    </body>
+</html>
+     
+     
+     
+     
+     
+<section class="quiz-content18">
+    
+    <div class="quiz18">
+    
+        <br>
+        <br>
+    <h1>Quiz</h1>
+        <br>
+ 
+        </div>
+     </section>
+
+
+ <html>
+
+<body>
+
+  <div class="quiz-container18" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question">Question Text</h2>
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">Answer</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <button id="submit">Submit</button>
+
+  </div>
+
+
+
+  
+</body>
+</html>
+
+
+
+
+
+<script>
+
+const quizData = [
+    {
+        question: "What is inheritance in Java used for?",
+        a: "To create a new class from an existing class",
+        b: "To define an interface",
+        c: "To declare a constructor",
+        d: "To share attributes and methods between classes",
+        correct: "d",
+    },
+    {
+        question: "What keyword in Java is used to inherit from a parent class?",
+        a: "inheritance",
+        b: "extend",
+        c: "parent",
+        d: "none af above",
+        correct: "b",
+    },
+  
+    {
+        question: "Can a class inherit from multiple classes in Java?",
+        a: "yes",
+        b: "no",
+        c: "sometimes",
+        d: "none of above",
+        correct: "b",
+    },
+
+
+];
+
+const quiz= document.getElementById('quiz')
+const answerEls = document.querySelectorAll('.answer')
+const questionEl = document.getElementById('question')
+const a_text = document.getElementById('a_text')
+const b_text = document.getElementById('b_text')
+const c_text = document.getElementById('c_text')
+const d_text = document.getElementById('d_text')
+const submitBtn = document.getElementById('submit')
+
+
+let currentQuiz = 0
+let score = 0
+
+loadQuiz()
+
+function loadQuiz() {
+
+    deselectAnswers()
+
+    const currentQuizData = quizData[currentQuiz]
+
+    questionEl.innerText = currentQuizData.question
+    a_text.innerText = currentQuizData.a
+    b_text.innerText = currentQuizData.b
+    c_text.innerText = currentQuizData.c
+    d_text.innerText = currentQuizData.d
+}
+
+function deselectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+}
+
+function getSelected() {
+    let answer
+    answerEls.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+    return answer
+}
+
+
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if(answer) {
+       if(answer === quizData[currentQuiz].correct) {
+           score++
+       }
+
+       currentQuiz++
+
+       if(currentQuiz < quizData.length) {
+           loadQuiz()
+       } else {
+           quiz.innerHTML = `
+           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+
+           <button onclick="location.reload()">Try again</button>
+           `
+       }
+    }
+})
+
+</script>
+
+
+<!------DARKMODE FOR ALL PAGES------> 
+<script>
+    if(localStorage.getItem("theme") == "light"){
+        document.body.classList.remove("dark-theme");
+    }
+    else if(localStorage.getItem("theme") == "dark"){
+        document.body.classList.add("dark-theme");
+    }
+</script>
+
+
+        
+        
+   <!------JavaScript for DARK MODE------>     
+        
+    <script>
+        
+        var icon = document.getElementById("icon");
+        
+        if(localStorage.getItem("theme") == null){
+         
+             localStorage.setItem("theme", "light"); 
+            
+        }
+        
+        
+        let localData = localStorage.getItem("theme");
+        
+        if(localData == "light"){
+            icon.src = "./images/moon.png";
+            document.body.classList.remove("dark-theme");
+        }
+        else if(localData == "dark"){
+            icon.src = "./images/sun.png";
+            document.body.classList.add("dark-theme");
+        }
+        
+        
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "./images/sun.png";
+                localStorage.setItem("theme", "dark");
+        }else{
+            
+            icon.src="./images/moon.png";
+            localStorage.setItem("theme", "light");
+        }
+        
+        }
+    </script>   

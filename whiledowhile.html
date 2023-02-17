@@ -1,0 +1,579 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title>Study Java </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <section class="introductionheader">
+        <nav>
+           
+           
+            <a href="./index.html"><img src="./images/home.png"></a>
+           
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                     <li><a href="./index.html">HOME</a></li>
+                  
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img src="./images/moon.png" id="icon">
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+         
+        
+        <nav3>
+<ul>
+
+<li><a href="./flowcontrol.html" class="hero-btn7">Decision making</a></li>
+    
+
+<li><a href="./forloop.html" class="hero-btn8">Loops in programming</a></li>  
+
+
+ <li><a href="./whiledowhile.html" class="hero-btn9">While and Do-while</a></li> 
+
+</ul>
+</nav3> 
+        
+        
+<div class="wdtext-box"> 
+        <h1>While and do while</h1>
+        
+        
+</div>
+        
+</section>
+        
+        
+                                  <img src="./images/logo.png" alt="description of image">
+        
+               
+        
+<!-------home and contact------>
+
+
+<html>
+
+<body>
+
+<div class="container">
+
+<nav8>
+<ul>
+    
+<li><a href="./index.html">Home</a></li>
+                  
+<li><a href="./contact.html">Contact</a></li>
+
+</ul>
+</nav8>
+</div>
+
+</body>
+</html>
+ 
+        
+<!------scroll bar------>        
+<section>
+    
+<div class = "arrow">
+<a class="gotobtn" href="#"><i class="fa fa-arrow-up"></i></a>
+        </div>
+</section>
+       
+        
+        
+<!------page content------>
+
+<section class="page-content">
+    
+    <div class="wdloop">
+    
+        <br>
+        <br>
+    <h1>While Loop :</h1>
+        <br>
+<p>The syntax of the while loop is:<br> 
+<br> 
+while (testCondition) {<br>  
+<br> 
+// the loop body<br>  
+<br> 
+}<br>  
+<br> 
+Here’s how this loop works:<br>
+<br>
+
+1.	The while loop checks the test condition inside parentheses.<br>  
+<br>
+
+2.	If the test condition is true, the loop body is executed<br>  
+<br>
+
+3.	And the test condition is checked again.<br>  
+<br>
+
+4.	This process goes on until the test condition evaluates to false.<br>  
+<br>
+
+5.	When the test condition is false, the loop terminates.<br>  
+  
+</p>    
+        </div>
+        </section>
+       
+
+   <!------while program header------>       
+        
+ <section class="wdelcp">
+    
+        <br>
+        <br>
+    <h1>Example: while Loop  </h1>
+        <br>
+     <p>● This program prints a sentence 3 times. <br>
+         
+         
+</p>
+    
+    <div class="text-boxes8">
+    <div class="text-box8 HTMLBox8">
+      <div class="topic8"></div>
+      <textarea id="HTMLBox8" readonly>
+
+class Main { 
+
+public static void main(String[] args) { 
+
+int i = 0; 
+
+while(i < 3) { 
+
+System.out.println(“Loop is easy”); 
+
+++i;   //i=i+1 
+
+} 
+} 
+} 
+
+/*Output:
+
+Loop is easy
+Loop is easy 
+Loop is easy */
+
+                     
+      </textarea>
+      <button id="HTMLButton8">Copy Code</button>
+    </div>
+   </div>
+     </section> 
+   
+     
+      <!------dowhile program header------> 
+     
+     
+ <div class="dloop">
+    
+        <br>
+        <br>
+    <h1>Do…while Loop </h1>
+        <br>
+<p>The do….while loop is similar to the while loop with one important difference. The body of the do…while loop is executed once before the test condition Is evaluated.<br> 
+<br> 
+Its syntax Is:<br>  
+<br> 
+Do {<br>  
+<br> 
+// body of the loop<br>  
+<br> 
+}<br>  
+<br> 
+While (testCondition);<br>  
+<br> 
+Working of do…while Loop<br>  
+<br> 
+The body of do…while loop is executed once. Only then the test condition is evaluated.<br>  
+If the test condition evaluates to true, the body of the loop is executed. Again, the test condition is checked.<br>  
+<br> 
+This process goes on until the test condition evaluates to false.<br>  
+<br> 
+When the test condition evaluates to false, the loop terminates.<br>  
+
+  
+</p>    
+        </div>
+        </section>
+       
+
+        
+        
+ <section class="doelcp">
+    
+        <br>
+        <br>
+    <h1>Example 2: do…while Loop  </h1>
+        <br>
+     <p>● This program prints the number from 1 to 4. <br>
+         
+         
+</p>
+    
+    <div class="text-boxes9">
+    <div class="text-box9 HTMLBox9">
+      <div class="topic9"></div>
+      <textarea id="HTMLBox9" readonly>
+
+
+class Main { 
+
+public static void main(String[] args) { 
+
+int i = 1; 
+
+do { 
+
+System.out.println(i); 
+++i; 
+} 
+while (i < 5); 
+} 
+} 
+/*Output
+1
+2
+3
+4 
+Here the body runs from i equal to 1 to 4 */
+
+
+                     
+      </textarea>
+      <button id="HTMLButton9">Copy Code</button>
+    </div>
+   </div>
+     </section> 
+     
+
+        
+
+
+ <!------link box(decision making)------>
+           
+       <section class="iflink">
+    
+    <div class="ifdlink">
+       
+    </div>
+    
+    </section>   
+        
+<!------link box(loops)------>
+           
+       <section class="loolink">
+    
+    <div class="loodlink">
+       
+    </div>
+    
+    </section> 
+
+<!------link box(While and Do-while loop)------>
+           
+       <section class="wdlink">
+    
+    <div class="wddlink">
+      
+    </div>
+    
+    </section>
+        
+
+        
+     
+        
+
+
+        
+<!------JavaScript for Toggle Menu------>
+    
+<script>
+     
+     var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+     
+     function hideMenu(){
+         navLinks.style.right = "-200px";
+     }
+    
+</script>
+        
+
+     
+<!------JavaScript for program copy code                 whileloop------>
+        
+<script>
+  // HTML BOx JS Code
+    let HTMLBox8 = document.getElementById("HTMLBox8");
+    let HTMLButton8 = document.getElementById("HTMLButton8");
+
+    HTMLButton8.onclick = function() {
+      HTMLBox8.select();
+      document.execCommand("copy");
+      HTMLButton8.innerText = "Codes Copied"
+    }
+
+        </script>     
+ 
+     
+     <!------JavaScript for program copy code                 dowhileloop------>
+        
+<script>
+  // HTML BOx JS Code
+    let HTMLBox9 = document.getElementById("HTMLBox9");
+    let HTMLButton9 = document.getElementById("HTMLButton9");
+
+    HTMLButton9.onclick = function() {
+      HTMLBox9.select();
+      document.execCommand("copy");
+      HTMLButton9.innerText = "Codes Copied"
+    }
+
+        </script>  
+ <!------JavaScript for code color that stays------>
+        
+        <script>
+        
+        const activePage = window.location.pathname;    
+        const nav3Links = document.querySelectorAll('nav3 a').
+        forEach(link => {
+            if(link.href.includes(`${activePage}`)){
+            link.classList.add('active');
+            }
+        })
+       </script> 
+     
+    </body>
+</html>
+     
+     
+     
+<section class="quiz-content8">
+    
+    <div class="quiz8">
+    
+        <br>
+        <br>
+    <h1>Quiz</h1>
+        <br>
+ 
+        </div>
+     </section>
+
+
+ <html>
+
+<body>
+
+  <div class="quiz-container8" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question">Question Text</h2>
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">Answer</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <button id="submit">Submit</button>
+
+  </div>
+
+
+
+  
+</body>
+</html>
+
+
+
+
+
+<script>
+
+const quizData = [
+    {
+        question: "What is the difference between while and do-while loops in Java?",
+        a: "A while loop executes in a random order, while a do-while loop always executes in a specific order.",
+        b: "There is no difference between while and do-while loops in Java.",
+        c: "A while loop always executes at least once, while a do-while loop only executes if the condition is true.",
+        d: " A while loop only executes if the condition is true, while a do-while loop always executes at least once.",
+        correct: "d",
+    },
+    {
+        question: "What is the correct syntax for a while loop in Java?",
+        a: "while i < n",
+        b: "while (i < n)",
+        c: "while (i = n)",
+        d: "none of above",
+        correct: "b",
+    },
+  
+    {
+        question: "What is the correct syntax for a do-while loop in Java?",
+        a: "while (i = n)",
+        b: "do while (i < n)",
+        c: "while i < n",
+        d: "none of above",
+        correct: "b",
+    },
+
+
+];
+
+const quiz= document.getElementById('quiz')
+const answerEls = document.querySelectorAll('.answer')
+const questionEl = document.getElementById('question')
+const a_text = document.getElementById('a_text')
+const b_text = document.getElementById('b_text')
+const c_text = document.getElementById('c_text')
+const d_text = document.getElementById('d_text')
+const submitBtn = document.getElementById('submit')
+
+
+let currentQuiz = 0
+let score = 0
+
+loadQuiz()
+
+function loadQuiz() {
+
+    deselectAnswers()
+
+    const currentQuizData = quizData[currentQuiz]
+
+    questionEl.innerText = currentQuizData.question
+    a_text.innerText = currentQuizData.a
+    b_text.innerText = currentQuizData.b
+    c_text.innerText = currentQuizData.c
+    d_text.innerText = currentQuizData.d
+}
+
+function deselectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+}
+
+function getSelected() {
+    let answer
+    answerEls.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+    return answer
+}
+
+
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if(answer) {
+       if(answer === quizData[currentQuiz].correct) {
+           score++
+       }
+
+       currentQuiz++
+
+       if(currentQuiz < quizData.length) {
+           loadQuiz()
+       } else {
+           quiz.innerHTML = `
+           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+
+           <button onclick="location.reload()">Try again</button>
+           `
+       }
+    }
+})
+
+</script>
+         
+   
+     
+<!------DARKMODE FOR ALL PAGES------> 
+<script>
+    if(localStorage.getItem("theme") == "light"){
+        document.body.classList.remove("dark-theme");
+    }
+    else if(localStorage.getItem("theme") == "dark"){
+        document.body.classList.add("dark-theme");
+    }
+</script>
+    
+    
+            
+        
+   <!------JavaScript for DARK MODE------>     
+        
+    <script>
+        
+        var icon = document.getElementById("icon");
+        
+        if(localStorage.getItem("theme") == null){
+         
+             localStorage.setItem("theme", "light"); 
+            
+        }
+        
+        
+        let localData = localStorage.getItem("theme");
+        
+        if(localData == "light"){
+            icon.src = "./images/moon.png";
+            document.body.classList.remove("dark-theme");
+        }
+        else if(localData == "dark"){
+            icon.src = "./images/sun.png";
+            document.body.classList.add("dark-theme");
+        }
+        
+        
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "./images/sun.png";
+                localStorage.setItem("theme", "dark");
+        }else{
+            
+            icon.src="./images/moon.png";
+            localStorage.setItem("theme", "light");
+        }
+        
+        }
+    </script>   

@@ -1,0 +1,466 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title>Study Java </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <section class="introductionheader">
+        <nav>
+           
+           
+            <a href="./index.html"><img src="./images/home.png"></a>
+           
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                     <li><a href="./index.html">HOME</a></li>
+                  
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <img src="./images/moon.png" id="icon">
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+         
+        <nav6>
+<ul>
+
+
+
+        <li><a href="./OOPS.html" class="hero-btn16">classes,objects</a></li>
+        
+
+ 
+        <li><a href="./constructor.html" class="hero-btn17">Constructor</a></li>
+        
+
+ 
+        <li><a href="./privatepublic.html" class="hero-btn18">Acess modifiers</a></li>
+        
+
+
+
+</ul>
+</nav6> 
+        
+<div class="prputext-box"> 
+        <h1>Access modifiers</h1>
+        
+        
+</div>
+        
+</section>
+ 
+        
+                                  <img src="./images/logo.png" alt="description of image">
+        
+        
+               
+        
+<!-------home and contact------>
+
+
+<html>
+
+<body>
+
+<div class="container">
+
+<nav8>
+<ul>
+    
+<li><a href="./index.html">Home</a></li>
+                  
+<li><a href="./contact.html">Contact</a></li>
+
+</ul>
+</nav8>
+</div>
+
+</body>
+</html>
+        
+        
+<!------scroll bar------>        
+<section>
+    
+<div class = "arrow">
+<a class="gotobtn" href="#"><i class="fa fa-arrow-up"></i></a>
+        </div>
+</section>
+        
+        
+<!------page content------>
+
+<section class="page-content">
+    
+    <div class="prpu">
+    
+        <br>
+        <br>
+    <h1>Access modifiers</h1>
+        <br>
+<p>
+    In this lesson, we will learn about two Keywords: public and private.<br> 
+<br>
+These keywords (access modifiers) determine whether a method /field can be accessed from other classes or not.<br> 
+<br>
+Private members can be accessed only from within the class<br> 
+<br>
+Public members can be accessed From anywhere<br> 
+
+</p>    
+        </div>
+        </section> 
+        
+
+<section>
+ <div class="text-boxes20">
+    <div class="text-box20 HTMLBox20">
+      <div class="topic20"></div>
+      <textarea id="HTMLBox20" readonly>
+
+class Data { 
+
+// private variable
+
+private String name; 
+
+} 
+
+class Main { 
+
+public static void main(String[] main) { 
+
+// create an object of Data
+
+Data d1 = new Data(); 
+
+d1.name = "Java";  // Error code 
+          
+ }}
+          
+/*Output 
+
+Main. Java:13: error: name has 
+Private access in Data 
+D1.name = "Java"; 
+
+Inside the Main class, we have created an object of the Data class and accessed the name field. Since the name field is private to the Data class, it cannot be accessed from the Main class. That’s why the program throws an error. */
+          
+
+
+
+                     
+      </textarea>
+      <button id="HTMLButton20">Copy Code</button>
+    </div>
+   </div>
+     </section>                    
+                
+
+ <!------link box(decision making)------>
+           
+       <section class="cloblink">
+    
+    <div class="clobdlink">
+        
+    </div>
+    
+    </section>   
+        
+<!------link box(loops)------>
+           
+       <section class="conslink">
+    
+    <div class="consdlink">
+        
+    </div>
+    
+    </section> 
+
+<!------link box(While and Do-while loop)------>
+           
+       <section class="prpublink">
+    
+    <div class="prpudlink">
+       
+    </div>
+    
+    </section>
+        
+
+        
+     
+        
+
+
+        
+<!------JavaScript for Toggle Menu------>
+    
+<script>
+     
+     var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+     
+     function hideMenu(){
+         navLinks.style.right = "-200px";
+     }
+    
+</script>
+        
+
+     
+<!------JavaScript for program copy code              constructors------>
+        
+<script>
+  // HTML BOx JS Code
+    let HTMLBox20 = document.getElementById("HTMLBox20");
+    let HTMLButton20 = document.getElementById("HTMLButton20");
+
+    HTMLButton20.onclick = function() {
+      HTMLBox20.select();
+      document.execCommand("copy");
+      HTMLButton20.innerText = "Codes Copied"
+    }
+
+        </script>     
+ 
+  <!------JavaScript for code color that stays------>
+        
+        <script>
+        
+        const activePage = window.location.pathname;    
+        const nav6Links = document.querySelectorAll('nav6 a').
+        forEach(link => {
+            if(link.href.includes(`${activePage}`)){
+            link.classList.add('active');
+            }
+        })
+       </script> 
+         
+
+     
+    </body>
+</html>
+     
+     
+     
+     
+     
+     
+<section class="quiz-content17">
+    
+    <div class="quiz17">
+    
+        <br>
+        <br>
+    <h1>Quiz</h1>
+        <br>
+ 
+        </div>
+     </section>
+
+
+ <html>
+
+<body>
+
+  <div class="quiz-container17" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question">Question Text</h2>
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">Answer</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <button id="submit">Submit</button>
+
+  </div>
+
+
+
+  
+</body>
+</html>
+
+
+
+
+
+<script>
+
+const quizData = [
+    {
+        question: "Can a class be declared as private in Java?",
+        a: "yes",
+        b: "maybe",
+        c: "sometimes",
+        d: "no",
+        correct: "d",
+    },
+    {
+        question: "Can a method be declared as private and public at the same time in Java?",
+        a: "yes",
+        b: "no",
+        c: "sometimes",
+        d: "none of above",
+        correct: "b",
+    },
+  
+    {
+        question: "What happens if a member in Java does not have any access modifier specified?",
+        a: "It is accessible from anywhere",
+        b: "It is accessible only within the same package",
+        c: "It is inaccessible from outside the class",
+        d: "none of above",
+        correct: "b",
+    },
+
+
+];
+
+const quiz= document.getElementById('quiz')
+const answerEls = document.querySelectorAll('.answer')
+const questionEl = document.getElementById('question')
+const a_text = document.getElementById('a_text')
+const b_text = document.getElementById('b_text')
+const c_text = document.getElementById('c_text')
+const d_text = document.getElementById('d_text')
+const submitBtn = document.getElementById('submit')
+
+
+let currentQuiz = 0
+let score = 0
+
+loadQuiz()
+
+function loadQuiz() {
+
+    deselectAnswers()
+
+    const currentQuizData = quizData[currentQuiz]
+
+    questionEl.innerText = currentQuizData.question
+    a_text.innerText = currentQuizData.a
+    b_text.innerText = currentQuizData.b
+    c_text.innerText = currentQuizData.c
+    d_text.innerText = currentQuizData.d
+}
+
+function deselectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+}
+
+function getSelected() {
+    let answer
+    answerEls.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+    return answer
+}
+
+
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if(answer) {
+       if(answer === quizData[currentQuiz].correct) {
+           score++
+       }
+
+       currentQuiz++
+
+       if(currentQuiz < quizData.length) {
+           loadQuiz()
+       } else {
+           quiz.innerHTML = `
+           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+
+           <button onclick="location.reload()">Try again</button>
+           `
+       }
+    }
+})
+
+</script>
+         
+
+<!------DARKMODE FOR ALL PAGES------> 
+<script>
+    if(localStorage.getItem("theme") == "light"){
+        document.body.classList.remove("dark-theme");
+    }
+    else if(localStorage.getItem("theme") == "dark"){
+        document.body.classList.add("dark-theme");
+    }
+</script>
+
+
+        
+        
+   <!------JavaScript for DARK MODE------>     
+        
+    <script>
+        
+        var icon = document.getElementById("icon");
+        
+        if(localStorage.getItem("theme") == null){
+         
+             localStorage.setItem("theme", "light"); 
+            
+        }
+        
+        
+        let localData = localStorage.getItem("theme");
+        
+        if(localData == "light"){
+            icon.src = "./images/moon.png";
+            document.body.classList.remove("dark-theme");
+        }
+        else if(localData == "dark"){
+            icon.src = "./images/sun.png";
+            document.body.classList.add("dark-theme");
+        }
+        
+        
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "./images/sun.png";
+                localStorage.setItem("theme", "dark");
+        }else{
+            
+            icon.src="./images/moon.png";
+            localStorage.setItem("theme", "light");
+        }
+        
+        }
+    </script>   

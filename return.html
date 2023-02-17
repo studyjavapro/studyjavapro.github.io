@@ -1,0 +1,535 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title>Study Java </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <section class="introductionheader">
+       <nav>
+           
+           
+            <a href="./index.html"><img src="./images/home.png"></a>
+           
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                     <li><a href="./index.html">HOME</a></li>
+                  
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+           <img src="./images/moon.png" id="icon">
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+         
+        <nav5>
+<ul>
+
+
+
+        <li><a href="./METHODS.html" class="hero-btn13">Java methods</a></li>
+      
+
+
+
+        <li><a href="./return.html" class="hero-btn14">parameters,return type</a></li>
+    
+
+
+        <li><a href="./library.html" class="hero-btn15">Standard libraries</a></li>
+       
+
+</ul>
+</nav5> 
+        
+        
+<div class="mptext-box"> 
+        <h1>Method Parameters (Arguments) </h1>
+        
+        
+</div>
+        
+</section>
+        
+                                  <img src="./images/logo.png" alt="description of image">
+        
+               
+        
+<!-------home and contact------>
+
+
+<html>
+
+<body>
+
+<div class="container">
+
+<nav8>
+<ul>
+    
+<li><a href="./index.html">Home</a></li>
+                  
+<li><a href="./contact.html">Contact</a></li>
+
+</ul>
+</nav8>
+</div>
+
+</body>
+</html>
+ 
+
+        
+<!------scroll bar------>        
+<section>
+    
+<div class = "arrow">
+<a class="gotobtn" href="#"><i class="fa fa-arrow-up"></i></a>
+        </div>
+</section>
+       
+        
+        
+<!------page content------>
+
+<section class="page-content">
+    
+    <div class="para">
+    
+        <br>
+        <br>
+    <h1>Method Parameters  </h1>
+        <br>
+<p>We can also pass values to a method. These values we pass to a method are known as arguments.<br> 
+<br> 
+Let’s take an example,<br>  
+
+
+</p>    
+        </div>
+        
+ 
+ <div class="text-boxes14">
+    <div class="text-box14 HTMLBox14">
+      <div class="topic14"></div>
+      <textarea id="HTMLBox14" readonly>
+
+class Main { 
+
+// create a method static void printNumber(int number){ 
+
+System.out.println(number); // 10 
+
+} 
+
+// the main() method 
+
+public static void main(String[] args) { 
+
+int n = 10; 
+
+// calling a method
+
+ printNumber(n); 
+
+} } 
+/*Output
+ 10 */
+
+
+
+
+                     
+      </textarea>
+      <button id="HTMLButton14">Copy Code</button>
+    </div>
+   </div>
+     </section> 
+        
+        
+    
+<!------page content1------>
+
+<section class="page-content1">
+    
+    <div class="para1">
+    
+        <br>
+        <br>
+    <h1>Return a Value  </h1>
+        <br>
+<p>Let’s modify the addNumbers() method we have been working on so that it returns a value.<br>
+    <br>
+    Things to Notice in below program<br>
+<br>
+ Before, the return type of the method was void. It means the method didn’t return any value.<br> 
+<br>
+Now, the return type is int. Meaning, the method must return an int value.<br> 
+<br>
+To return the value, we have used the return statement: return sum; <br>
+
+</p>    
+        </div>
+        
+ 
+ <div class="text-boxes15">
+    <div class="text-box15 HTMLBox15">
+      <div class="topic15"></div>
+      <textarea id="HTMLBox15" readonly>
+
+Class Main { 
+
+// create a method 
+
+Static int addNumbers(int a, int b) {
+
+ Int sum;
+ Sum = a + b; 
+Return sum; 
+
+} 
+
+// the main() method 
+
+Public static void main(String[] args) {
+
+ Int result;
+ Result = addNumbers(4, 9); System.out.println(result); 
+
+} }
+          
+/*Output:
+ 13 */
+
+
+
+
+                     
+      </textarea>
+      <button id="HTMLButton15">Copy Code</button>
+    </div>
+   </div>
+     </section> 
+                
+        
+        
+
+ <!------link box(decision making)------>
+           
+       <section class="melink">
+    
+    <div class="medlink">
+       
+    </div>
+    
+    </section>   
+        
+<!------link box(loops)------>
+           
+       <section class="relink">
+    
+    <div class="redlink">
+        
+    </div>
+    
+    </section> 
+
+<!------link box(While and Do-while loop)------>
+           
+       <section class="liblink">
+    
+    <div class="libdlink">
+       
+    </div>
+    
+    </section>
+        
+
+        
+     
+        
+
+
+        
+<!------JavaScript for Toggle Menu------>
+    
+<script>
+     
+     var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+     
+     function hideMenu(){
+         navLinks.style.right = "-200px";
+     }
+    
+</script>
+        
+
+     
+<!------JavaScript for program copy code                 para------>
+        
+<script>
+  // HTML BOx JS Code
+    let HTMLBox14 = document.getElementById("HTMLBox14");
+    let HTMLButton14 = document.getElementById("HTMLButton14");
+
+    HTMLButton14.onclick = function() {
+      HTMLBox14.select();
+      document.execCommand("copy");
+      HTMLButton14.innerText = "Codes Copied"
+    }
+
+        </script>     
+ 
+ 
+<!------JavaScript for program copy code              para2------>
+        
+<script>
+  // HTML BOx JS Code
+    let HTMLBox15 = document.getElementById("HTMLBox15");
+    let HTMLButton15 = document.getElementById("HTMLButton15");
+
+    HTMLButton15.onclick = function() {
+      HTMLBox15.select();
+      document.execCommand("copy");
+      HTMLButton15.innerText = "Codes Copied"
+    }
+
+        </script>         
+     
+<!------JavaScript for code color that stays------>
+        
+        <script>
+        
+        const activePage = window.location.pathname;    
+        const nav5Links = document.querySelectorAll('nav5 a').
+        forEach(link => {
+            if(link.href.includes(`${activePage}`)){
+            link.classList.add('active');
+            }
+        })
+       </script>     
+        
+     
+    </body>
+</html>
+     
+     
+     
+     
+     
+<section class="quiz-content13">
+    
+    <div class="quiz13">
+    
+        <br>
+        <br>
+    <h1>Quiz</h1>
+        <br>
+ 
+        </div>
+     </section>
+
+
+ <html>
+
+<body>
+
+  <div class="quiz-container13" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question">Question Text</h2>
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">Answer</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <button id="submit">Submit</button>
+
+  </div>
+
+
+
+  
+</body>
+</html>
+
+
+
+
+
+<script>
+
+const quizData = [
+    {
+        question: "What is the default return type of a method in Java if not specified?",
+        a: "int",
+        b: "double",
+        c: "String",
+        d: "void",
+        correct: "d",
+    },
+    {
+        question: "Can a void method return a value in Java?",
+        a: "No, a void method cannot return any value.",
+        b: "No, but a void method can have a return statement.",
+        c: "Yes, a void method can return a value using the return statement.",
+        d: "none of above",
+        correct: "b",
+    },
+  
+    {
+        question: "What is the purpose of the return statement in a method in Java?",
+        a: "To exit the method without returning any value.",
+        b: "To exit the method and return a value to the calling method.",
+        c: "To display the value returned by the method.",
+        d: "none of above",
+        correct: "b",
+    },
+
+
+];
+
+const quiz= document.getElementById('quiz')
+const answerEls = document.querySelectorAll('.answer')
+const questionEl = document.getElementById('question')
+const a_text = document.getElementById('a_text')
+const b_text = document.getElementById('b_text')
+const c_text = document.getElementById('c_text')
+const d_text = document.getElementById('d_text')
+const submitBtn = document.getElementById('submit')
+
+
+let currentQuiz = 0
+let score = 0
+
+loadQuiz()
+
+function loadQuiz() {
+
+    deselectAnswers()
+
+    const currentQuizData = quizData[currentQuiz]
+
+    questionEl.innerText = currentQuizData.question
+    a_text.innerText = currentQuizData.a
+    b_text.innerText = currentQuizData.b
+    c_text.innerText = currentQuizData.c
+    d_text.innerText = currentQuizData.d
+}
+
+function deselectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+}
+
+function getSelected() {
+    let answer
+    answerEls.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+    return answer
+}
+
+
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if(answer) {
+       if(answer === quizData[currentQuiz].correct) {
+           score++
+       }
+
+       currentQuiz++
+
+       if(currentQuiz < quizData.length) {
+           loadQuiz()
+       } else {
+           quiz.innerHTML = `
+           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+
+           <button onclick="location.reload()">Try again</button>
+           `
+       }
+    }
+})
+
+</script>
+         
+
+<!------DARKMODE FOR ALL PAGES------> 
+<script>
+    if(localStorage.getItem("theme") == "light"){
+        document.body.classList.remove("dark-theme");
+    }
+    else if(localStorage.getItem("theme") == "dark"){
+        document.body.classList.add("dark-theme");
+    }
+</script>
+
+
+        
+        
+   <!------JavaScript for DARK MODE------>     
+        
+    <script>
+        
+        var icon = document.getElementById("icon");
+        
+        if(localStorage.getItem("theme") == null){
+         
+             localStorage.setItem("theme", "light"); 
+            
+        }
+        
+        
+        let localData = localStorage.getItem("theme");
+        
+        if(localData == "light"){
+            icon.src = "./images/moon.png";
+            document.body.classList.remove("dark-theme");
+        }
+        else if(localData == "dark"){
+            icon.src = "./images/sun.png";
+            document.body.classList.add("dark-theme");
+        }
+        
+        
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "./images/sun.png";
+                localStorage.setItem("theme", "dark");
+        }else{
+            
+            icon.src="./images/moon.png";
+            localStorage.setItem("theme", "light");
+        }
+        
+        }
+    </script>   

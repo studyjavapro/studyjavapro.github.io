@@ -1,0 +1,491 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <title>Study Java </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <section class="introductionheader">
+       <nav>
+           
+           
+            <a href="./index.html"><img src="./images/home.png"></a>
+           
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                     <li><a href="./index.html">HOME</a></li>
+                  
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+           <img src="./images/moon.png" id="icon">
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+         
+        <nav4>
+<ul>
+
+
+<li><a href="./ARRAYS.html" class="hero-btn10">Arrays</a></li>
+        
+    
+
+ 
+<li><a href="./foreach.html" class="hero-btn11">foreach loop</a></li>
+        
+
+ 
+ 
+<li><a href="./multi.html" class="hero-btn12">Multidimensional array</a></li>
+        
+
+</ul>
+</nav4> 
+        
+        
+<div class="mddtext-box"> 
+        <h1>Multi dimensional array</h1>
+        
+        
+</div>
+        
+</section>
+        
+        
+                                  <img src="./images/logo.png" alt="description of image">
+        
+               
+        
+<!-------home and contact------>
+
+
+<html>
+
+<body>
+
+<div class="container">
+
+<nav8>
+<ul>
+    
+<li><a href="./index.html">Home</a></li>
+                  
+<li><a href="./contact.html">Contact</a></li>
+
+</ul>
+</nav8>
+</div>
+
+</body>
+</html>
+ 
+        
+<!------scroll bar------>        
+<section>
+    
+<div class = "arrow">
+<a class="gotobtn" href="#"><i class="fa fa-arrow-up"></i></a>
+        </div>
+</section>
+       
+        
+<!------page content------>
+
+<section class="page-content">
+    
+    <div class="mddarray">
+    
+        <br>
+        <br>
+    <h1>Create a 2D array </h1>
+        <br>
+<p>Here’s is how we can create multidimensional arrays:<br> 
+<br> 
+<br>     
+Int[][] data = new int[3](4];<br>  
+<br>
+<br>     
+Here, data is a two-dimensional array where each 3 elements of the array is also an array that has 4 elements. Hence, the array can hold 12 elements in total.<br> 
+ <br>
+<br>     
+Initialize Two Dimensional Arrays<br>  
+<br> 
+<br>     
+Here is how we can initialize a 2D array.<br>  
+<br>
+<br>     
+Int[][] data = { {2, 3, 5},<br> 
+    <br>
+    <br> 
+               {7, 14, 21, 28},<br> 
+    <br> 
+               {3, 5, 7, 9} };<br> 
+<br>
+<br>     
+Here, data is a 2D array. We can see each element of the array is an array itself.<br>  
+<br>
+<br>     
+Similar to a one-dimensional array, we use indexes to access elements of a 2D array.<br>  
+
+</p>    
+        </div>
+        </section>
+        
+ <!------foreach program header------>
+        
+         <section class="mdelcp">
+    
+        <br>
+        <br>
+    <h1>Print 2D Array Elements  </h1>
+        <br>
+     <p>● We can use nested loops to print elements of a 2D array. Here’s an example.  <br>
+         
+         
+</p>
+    
+    <div class="text-boxes12">
+    <div class="text-box12 HTMLBox12">
+      <div class="topic12"></div>
+      <textarea id="HTMLBox12" readonly>
+
+class Main { 
+
+public static void main(String[] args) { 
+
+int[][] data = { {2, 3}, 
+                 {7, 14}, 
+                 {1, 3, 5} }; 
+
+for (int [] inner: data) { 
+
+for (int value: inner) { 
+
+System.out.println(value) ; 
+
+} } } } 
+
+/*Output:
+2
+3
+7
+14
+1
+3
+5 */
+
+
+                     
+      </textarea>
+      <button id="HTMLButton12">Copy Code</button>
+    </div>
+   </div>
+     </section> 
+        
+        
+        
+
+
+ <!------link box(decision making)------>
+           
+       <section class="arlink">
+    
+    <div class="ardlink">
+        
+    </div>
+    
+    </section>   
+        
+<!------link box(loops)------>
+           
+       <section class="felink">
+    
+    <div class="fedlink">
+        
+    </div>
+    
+    </section> 
+
+<!------link box(While and Do-while loop)------>
+           
+       <section class="mdlink">
+    
+    <div class="mddlink">
+        
+    </div>
+    
+    </section>
+        
+
+        
+     
+        
+
+
+        
+<!------JavaScript for Toggle Menu------>
+    
+<script>
+     
+     var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+     
+     function hideMenu(){
+         navLinks.style.right = "-200px";
+     }
+    
+</script>
+        
+
+     
+<!------JavaScript for program copy code                 2d array------>
+        
+<script>
+  // HTML BOx JS Code
+    let HTMLBox12 = document.getElementById("HTMLBox12");
+    let HTMLButton12 = document.getElementById("HTMLButton12");
+
+    HTMLButton12.onclick = function() {
+      HTMLBox12.select();
+      document.execCommand("copy");
+      HTMLButton12.innerText = "Codes Copied"
+    }
+
+        </script>     
+ 
+ <!------JavaScript for code color that stays------>
+        
+        <script>
+        
+        const activePage = window.location.pathname;    
+        const nav4Links = document.querySelectorAll('nav4 a').
+        forEach(link => {
+            if(link.href.includes(`${activePage}`)){
+            link.classList.add('active');
+            }
+        })
+       </script>        
+
+     
+    </body>
+</html>
+     
+     
+     
+     
+     
+<section class="quiz-content11">
+    
+    <div class="quiz11">
+    
+        <br>
+        <br>
+    <h1>Quiz</h1>
+        <br>
+ 
+        </div>
+     </section>
+
+
+ <html>
+
+<body>
+
+  <div class="quiz-container11" id="quiz">
+    <div class="quiz-header">
+      <h2 id="question">Question Text</h2>
+      <ul>
+        <li>
+          <input type="radio" name="answer" id="a" class="answer">
+          <label for="a" id="a_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="b" class="answer">
+          <label for="b" id="b_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="c" class="answer">
+          <label for="c" id="c_text">Answer</label>
+        </li>
+
+        <li>
+          <input type="radio" name="answer" id="d" class="answer">
+          <label for="d" id="d_text">Answer</label>
+        </li>
+
+      </ul>
+    </div>
+
+    <button id="submit">Submit</button>
+
+  </div>
+
+
+
+  
+</body>
+</html>
+
+
+
+
+
+<script>
+
+const quizData = [
+    {
+        question: "What is the correct syntax for declaring a 2D array in Java?",
+        a: "int []arr[] = new int[3][3];",
+        b: "int arr[3][3] = new int[][];",
+        c: "int arr",
+        d: "int [][]arr = new int[3][3];",
+        correct: "d",
+    },
+    {
+        question: "How do you access a specific element in a 2D array in Java?",
+        a: "arr[j][i]",
+        b: "arr[i][j]",
+        c: "arr[i,j]",
+        d: "none of above",
+        correct: "b",
+    },
+  
+    {
+        question: "What is the purpose of the first dimension in a 2D array in Java?",
+        a: "It defines the number of columns in the array.",
+        b: "It defines the number of rows in the array.",
+        c: "It defines the size of the array.",
+        d: "none of above",
+        correct: "b",
+    },
+
+
+];
+
+const quiz= document.getElementById('quiz')
+const answerEls = document.querySelectorAll('.answer')
+const questionEl = document.getElementById('question')
+const a_text = document.getElementById('a_text')
+const b_text = document.getElementById('b_text')
+const c_text = document.getElementById('c_text')
+const d_text = document.getElementById('d_text')
+const submitBtn = document.getElementById('submit')
+
+
+let currentQuiz = 0
+let score = 0
+
+loadQuiz()
+
+function loadQuiz() {
+
+    deselectAnswers()
+
+    const currentQuizData = quizData[currentQuiz]
+
+    questionEl.innerText = currentQuizData.question
+    a_text.innerText = currentQuizData.a
+    b_text.innerText = currentQuizData.b
+    c_text.innerText = currentQuizData.c
+    d_text.innerText = currentQuizData.d
+}
+
+function deselectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false)
+}
+
+function getSelected() {
+    let answer
+    answerEls.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer = answerEl.id
+        }
+    })
+    return answer
+}
+
+
+submitBtn.addEventListener('click', () => {
+    const answer = getSelected()
+    if(answer) {
+       if(answer === quizData[currentQuiz].correct) {
+           score++
+       }
+
+       currentQuiz++
+
+       if(currentQuiz < quizData.length) {
+           loadQuiz()
+       } else {
+           quiz.innerHTML = `
+           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+
+           <button onclick="location.reload()">Try again</button>
+           `
+       }
+    }
+})
+
+</script>
+         
+
+<!------DARKMODE FOR ALL PAGES------> 
+<script>
+    if(localStorage.getItem("theme") == "light"){
+        document.body.classList.remove("dark-theme");
+    }
+    else if(localStorage.getItem("theme") == "dark"){
+        document.body.classList.add("dark-theme");
+    }
+</script>
+
+
+        
+        
+   <!------JavaScript for DARK MODE------>     
+        
+    <script>
+        
+        var icon = document.getElementById("icon");
+        
+        if(localStorage.getItem("theme") == null){
+         
+             localStorage.setItem("theme", "light"); 
+            
+        }
+        
+        
+        let localData = localStorage.getItem("theme");
+        
+        if(localData == "light"){
+            icon.src = "./images/moon.png";
+            document.body.classList.remove("dark-theme");
+        }
+        else if(localData == "dark"){
+            icon.src = "./images/sun.png";
+            document.body.classList.add("dark-theme");
+        }
+        
+        
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "./images/sun.png";
+                localStorage.setItem("theme", "dark");
+        }else{
+            
+            icon.src="./images/moon.png";
+            localStorage.setItem("theme", "light");
+        }
+        
+        }
+    </script>   
